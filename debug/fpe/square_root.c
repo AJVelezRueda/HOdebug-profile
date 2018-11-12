@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 #ifdef TRAPFPE
   set_fpe_x87_sse();
 #endif
-
+#include <stdio.h>
   printf("Square root, division and comparison\n");
   printf("Insert a\n");
   scanf("%f",&a);
@@ -21,10 +21,13 @@ int main(int argc, char *argv[])
   printf("Calculating a/b...");
   tmp = a / b;
   printf("Done!\n");
+  printf("%f\n", tmp);
 
   printf("Calculating sqrt(a/b)...");
   tmp = sqrt(tmp);
   printf("Done!\n");
+
+  printf("%f\n", tmp);
   
   printf("Comparing with 2...");
 
