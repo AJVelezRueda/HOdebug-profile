@@ -1,10 +1,17 @@
-###ejercicio add_array_dynamic.c#####
-el bug estaba en la linea 7, donde cambiamos el rango de i y lo dejamos hasta < n
+bugs:
 
-###ejercicio add_array_static.c#####
-el bug estaba en la linea 7, donde cambiamos el rango de i y lo dejamos hasta < n, para evitar que el programa adicione cosas basura de la memoria
+add_array_dynamic:
+el bug esta en que se ocupan mas lugares de memoria de los necesarios.
+en la linea 7 hay que suplantar <= n + 1 por < n.
 
-###ejercicio add_array_segfault.c#####
-este programa tiene dos bugs uno en la linea 7, igual a los otros programas y otro bug en la linea 14 donde debemos asisgnarle la medida del array
+add_array_static:
+error similar, el programa considera posiciones de memoria extras que contienen basura.
+
+add_array_segfault:
+mismo error que los anteriores
+y además, se generan dos punteros a enteros (a y b, linea 14), pero no se aclara la cantidad de memoria asignada a esos punteros. Para corregirlo hay que asignarle el tamaño del array.
+
+sigsegv:
+C:
 
 

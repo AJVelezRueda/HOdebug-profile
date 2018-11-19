@@ -32,8 +32,6 @@ las siguientes preguntas:
 
 - ¿Qué función requiere agregar `-DTRAPFPE`? ¿Cómo pueden hacer que el
 programa *linkee* adecuadamente?
-	deberíamos 
-
 - Para cada uno de los ejecutables, ¿qué hace agregar la opción
 `-DTRAPFPE` al compilar? ¿En qué se diferencian los mensajes de salida
 de los programas con y sin esa opción cuando tratan de hacer una
